@@ -29,7 +29,7 @@ fieldElements.map((field) => {
   const attributeId = input.getAttribute('id');
 
   input.setAttribute('placeholder', toTitle(attributeName));
-  label.textContent = attributeName;
+  label.textContent = toTitle(attributeName);
   label.setAttribute('for', attributeId);
   label.classList.add('field-label');
   field.prepend(label);
